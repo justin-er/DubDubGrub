@@ -9,10 +9,16 @@ import SwiftUI
 
 struct LocationListView: View {
     var body: some View {
-        Text("Location List")
+        NavigationStack {
+            List(0..<10) { _ in
+                LocationCell()
+            }
+            .listStyle(.plain)
+            .navigationTitle("Grub Spots")
+        }
     }
 }
-
+ 
 struct LocationListView_Previews: PreviewProvider {
     static var previews: some View {
         LocationListView()

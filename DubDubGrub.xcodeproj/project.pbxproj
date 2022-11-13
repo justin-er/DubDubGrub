@@ -16,6 +16,7 @@
 		E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2CE28FC6B3C00497572 /* LocationListView.swift */; };
 		E151E2D128FC6B6400497572 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2D028FC6B6400497572 /* ProfileView.swift */; };
 		E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2ED28FC915D00497572 /* LocationCell.swift */; };
+		E15586932918444A00C28C7E /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15586922918444A00C28C7E /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E151E2CE28FC6B3C00497572 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		E151E2D028FC6B6400497572 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E151E2ED28FC915D00497572 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		E15586922918444A00C28C7E /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				E151E2ED28FC915D00497572 /* LocationCell.swift */,
+				E15586922918444A00C28C7E /* AvatarView.swift */,
 			);
 			path = LocationCell;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */,
 				E151E2CB28FC663100497572 /* AppTabView.swift in Sources */,
 				E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */,
+				E15586932918444A00C28C7E /* AvatarView.swift in Sources */,
 				E151E2D128FC6B6400497572 /* ProfileView.swift in Sources */,
 				E151E2C928FC4F5900497572 /* Color+Ext.swift in Sources */,
 			);

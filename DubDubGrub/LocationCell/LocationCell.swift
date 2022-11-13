@@ -9,44 +9,46 @@ import SwiftUI
 
 struct LocationCell: View {
     var body: some View {
-        HStack {
-            Image("default-avatar")
+        HStack(spacing: 8) {
+            Image("default-square-asset")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 100)
+                .frame(width: 80)
                 .clipShape(Circle())
-                .padding([.leading], 16)
             
-            VStack {
-                HStack {
-                    Text("AC Kitchen and Lounge")
-                        .font(.title2)
-                    
-                    Spacer()
-                }
+            VStack(alignment: .leading) {
+                #warning("I don't understand what is the problem with this text and shortens the cell separator")
+//                HStack {
+//                    Text("AC Kitchen and Lounge")
+//                        .font(.title2)
+//                        .fontWeight(.semibold)
+//                        .lineLimit(1)
+//                        .minimumScaleFactor(0.75)
+//                }
                 
-                HStack {
+//                Text("AC Kitchen and Lounge")
+//                    .font(.title2)
+//                    .fontWeight(.semibold)
+//                    .lineLimit(1)
+//                    .minimumScaleFactor(0.75)
+                
+                HStack{
                     ForEach(1..<4) { _ in
-                        Image("default-avatar")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50)
-                            .clipShape(Circle())
+                        AvatarView()
                     }
-                    
-                    Spacer()
                 }
             }
+            .padding([.leading], 8)
             
             Spacer()
-            
         }
+        .padding(8)
     }
 }
 
 struct LocationCell_Previews: PreviewProvider {
     static var previews: some View {
         LocationCell()
-            .previewLayout(.fixed(width: 300, height: 70))
+            .previewLayout(.fixed(width: 450, height: 220))
     }
 }
