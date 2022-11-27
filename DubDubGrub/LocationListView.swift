@@ -11,13 +11,14 @@ struct LocationListView: View {
     var body: some View {
         NavigationStack {
             List(0..<10) { item in
-                NavigationLink {
-                    LocationDetailView()
-                } label: {
+                NavigationLink(value: item) {
                     LocationCell()
                 }
             }
             .listStyle(.plain)
+            .navigationDestination(for: Int.self, destination: { int in
+                LocationDetailView()
+            })
             .navigationTitle("Grub Spots")
         }
     }
