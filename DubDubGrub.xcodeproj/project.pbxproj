@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5758DE2292A78B10054A015 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5758DE1292A78B10054A015 /* ActionView.swift */; };
+		D5758DE5292A97460054A015 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5758DE4292A97460054A015 /* LocationDetailView.swift */; };
+		D5808DFD292A586500239F74 /* RestaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CEEB722921789D00D00F8B /* RestaurantInfo.swift */; };
 		E151E2BA28FC4AB200497572 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */; };
 		E151E2BE28FC4AB300497572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E151E2BD28FC4AB300497572 /* Assets.xcassets */; };
 		E151E2C128FC4AB300497572 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E151E2C028FC4AB300497572 /* Preview Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5758DE1292A78B10054A015 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		D5758DE4292A97460054A015 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		D5CEEB722921789D00D00F8B /* RestaurantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfo.swift; sourceTree = "<group>"; };
 		E151E2B628FC4AB200497572 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		E151E2BD28FC4AB300497572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +50,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5758DE3292A97340054A015 /* Jusint's */ = {
+			isa = PBXGroup;
+			children = (
+				D5CEEB722921789D00D00F8B /* RestaurantInfo.swift */,
+				D5758DE1292A78B10054A015 /* ActionView.swift */,
+			);
+			path = "Jusint's";
+			sourceTree = "<group>";
+		};
+		D5CEEB712921788200D00F8B /* LocationDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				D5758DE4292A97460054A015 /* LocationDetailView.swift */,
+				D5758DE3292A97340054A015 /* Jusint's */,
+			);
+			path = LocationDetailView;
+			sourceTree = "<group>";
+		};
 		E151E2AD28FC4AB200497572 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +92,7 @@
 				E151E2CC28FC6A7600497572 /* LocationMapView.swift */,
 				E151E2CE28FC6B3C00497572 /* LocationListView.swift */,
 				E151E2D028FC6B6400497572 /* ProfileView.swift */,
+				D5CEEB712921788200D00F8B /* LocationDetailView */,
 				E151E2EC28FC914D00497572 /* LocationCell */,
 				E151E2BD28FC4AB300497572 /* Assets.xcassets */,
 				E151E2C728FC4F4400497572 /* Extensions */,
@@ -171,13 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5758DE2292A78B10054A015 /* ActionView.swift in Sources */,
 				E151E2BA28FC4AB200497572 /* DubDubGrubApp.swift in Sources */,
+				D5758DE5292A97460054A015 /* LocationDetailView.swift in Sources */,
 				E151E2CD28FC6A7600497572 /* LocationMapView.swift in Sources */,
 				E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */,
 				E151E2CB28FC663100497572 /* AppTabView.swift in Sources */,
 				E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */,
 				E15586932918444A00C28C7E /* AvatarView.swift in Sources */,
 				E151E2D128FC6B6400497572 /* ProfileView.swift in Sources */,
+				D5808DFD292A586500239F74 /* RestaurantInfo.swift in Sources */,
 				E151E2C928FC4F5900497572 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,8 +10,12 @@ import SwiftUI
 struct LocationListView: View {
     var body: some View {
         NavigationStack {
-            List(0..<10) { _ in
-                LocationCell()
+            List(0..<10) { item in
+                NavigationLink {
+                    LocationDetailView()
+                } label: {
+                    LocationCell()
+                }
             }
             .listStyle(.plain)
             .navigationTitle("Grub Spots")
