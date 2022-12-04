@@ -33,38 +33,40 @@ struct LocationDetailView: View {
                     Capsule()
                         .frame(height: 80)
                         .foregroundColor(Color(.secondarySystemBackground))
+                    
+                        HStack(spacing: 10) {
+                            Button {
+                                //
+                            } label: {
+                                LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "location.fill")
+                            }
 
-                    HStack(spacing: 20) {
-                        Button {
-                            //
-                        } label: {
-                            LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "location.fill")
-                        }
+                            Link(destination: URL(string: "...")!) {
+                                LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "network")
+                            }
 
-                        Link(destination: URL(string: "...")!) {
-                            LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "network")
-                        }
+                            Button {
+                                //
+                            } label: {
+                                LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "phone.fill")
+                            }
 
-                        Button {
-                            //
-                        } label: {
-                            LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "phone.fill")
+                            Button {
+                                //
+                            } label: {
+                                LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "person.fill.checkmark")
+                            }
                         }
-
-                        Button {
-                            //
-                        } label: {
-                            LocationActionButton(foregroundColor: .brandPrimary, imageSystemName: "person.fill.checkmark")
-                        }
+                        .padding(.horizontal)
                     }
-                }
                 .padding(.horizontal)
 
                 Text("Who's Here?")
                     .bold()
                     .font(.title2)
-
+                                
                 Spacer()
+
             }
             .navigationTitle("Location Name")
             .navigationBarTitleDisplayMode(.inline)
