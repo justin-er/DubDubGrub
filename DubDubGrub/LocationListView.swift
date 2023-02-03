@@ -13,6 +13,9 @@ struct LocationListView: View {
             List(0..<10) { item in
                 NavigationLink(value: item) {
                     LocationCell()
+                        .alignmentGuide(.listRowSeparatorLeading) { dimentions in
+                            dimentions[.leading]
+                        }
                 }
             }
             .listStyle(.plain)
@@ -23,7 +26,7 @@ struct LocationListView: View {
         }
     }
 }
- 
+
 struct LocationListView_Previews: PreviewProvider {
     static var previews: some View {
         LocationListView()

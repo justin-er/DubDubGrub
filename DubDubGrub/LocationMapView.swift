@@ -27,7 +27,7 @@ struct LocationMapView: View {
                 Image("ddg-map-logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 270)
+                    .frame(height: 70)
                     .shadow(radius: 10)
                 Spacer()
             }

@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct LocationDetailView: View {
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
     var body: some View {
             VStack(spacing: 16) {
                 Image("default-banner-asset")
@@ -65,8 +72,11 @@ struct LocationDetailView: View {
                     .bold()
                     .font(.title2)
                                 
-                Spacer()
-
+                LazyVGrid(columns: columns) {
+                    ForEach(0..<8) { _ in
+                        FirstNameAvatarView(firstName: "Alexander")
+                    }
+                }
             }
             .navigationTitle("Location Name")
             .navigationBarTitleDisplayMode(.inline)

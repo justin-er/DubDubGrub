@@ -17,24 +17,15 @@ struct LocationCell: View {
                 .clipShape(Circle())
             
             VStack(alignment: .leading) {
-                #warning("I don't understand what is the problem with this text and shortens the cell separator")
-//                HStack {
-//                    Text("AC Kitchen and Lounge")
-//                        .font(.title2)
-//                        .fontWeight(.semibold)
-//                        .lineLimit(1)
-//                        .minimumScaleFactor(0.75)
-//                }
-                
-//                Text("AC Kitchen and Lounge")
-//                    .font(.title2)
-//                    .fontWeight(.semibold)
-//                    .lineLimit(1)
-//                    .minimumScaleFactor(0.75)
+                Text("AC Kitchen and Lounge")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.75)
                 
                 HStack{
                     ForEach(1..<4) { _ in
-                        AvatarView()
+                        AvatarView(size: 35)
                     }
                 }
             }

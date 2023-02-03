@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D5758DE2292A78B10054A015 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5758DE1292A78B10054A015 /* ActionView.swift */; };
 		D5758DE5292A97460054A015 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5758DE4292A97460054A015 /* LocationDetailView.swift */; };
+		D57A7519293D0CBF002662B0 /* FirstNameAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A7518293D0CBF002662B0 /* FirstNameAvatarView.swift */; };
 		D5808DFD292A586500239F74 /* RestaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CEEB722921789D00D00F8B /* RestaurantInfo.swift */; };
 		E151E2BA28FC4AB200497572 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */; };
 		E151E2BE28FC4AB300497572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E151E2BD28FC4AB300497572 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		D5758DE1292A78B10054A015 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		D5758DE4292A97460054A015 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		D57A7518293D0CBF002662B0 /* FirstNameAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNameAvatarView.swift; sourceTree = "<group>"; };
 		D5CEEB722921789D00D00F8B /* RestaurantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfo.swift; sourceTree = "<group>"; };
 		E151E2B628FC4AB200497572 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
@@ -57,6 +59,15 @@
 				D5758DE1292A78B10054A015 /* ActionView.swift */,
 			);
 			path = "Jusint's";
+			sourceTree = "<group>";
+		};
+		D57A7517293D0C9F002662B0 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				E15586922918444A00C28C7E /* AvatarView.swift */,
+				D57A7518293D0CBF002662B0 /* FirstNameAvatarView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 		D5CEEB712921788200D00F8B /* LocationDetailView */ = {
@@ -94,6 +105,7 @@
 				E151E2D028FC6B6400497572 /* ProfileView.swift */,
 				D5CEEB712921788200D00F8B /* LocationDetailView */,
 				E151E2EC28FC914D00497572 /* LocationCell */,
+				D57A7517293D0C9F002662B0 /* ReusableViews */,
 				E151E2BD28FC4AB300497572 /* Assets.xcassets */,
 				E151E2C728FC4F4400497572 /* Extensions */,
 				E151E2BF28FC4AB300497572 /* Preview Content */,
@@ -121,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				E151E2ED28FC915D00497572 /* LocationCell.swift */,
-				E15586922918444A00C28C7E /* AvatarView.swift */,
 			);
 			path = LocationCell;
 			sourceTree = "<group>";
@@ -199,6 +210,7 @@
 				D5758DE2292A78B10054A015 /* ActionView.swift in Sources */,
 				E151E2BA28FC4AB200497572 /* DubDubGrubApp.swift in Sources */,
 				D5758DE5292A97460054A015 /* LocationDetailView.swift in Sources */,
+				D57A7519293D0CBF002662B0 /* FirstNameAvatarView.swift in Sources */,
 				E151E2CD28FC6A7600497572 /* LocationMapView.swift in Sources */,
 				E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */,
 				E151E2CB28FC663100497572 /* AppTabView.swift in Sources */,

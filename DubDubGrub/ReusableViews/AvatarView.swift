@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct AvatarView: View {
+    let size: CGFloat
+    
     var body: some View {
         Image("default-avatar")
             .resizable()
             .scaledToFit()
-            .frame(width: 35 )
+            .frame(width: size)
             .clipShape(Circle())
     }
 }
