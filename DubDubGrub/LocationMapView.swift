@@ -21,15 +21,24 @@ struct LocationMapView: View {
     var body: some View {
         ZStack {
             Map(coordinateRegion: $region)
-                .ignoresSafeArea()
-            
-            VStack {
-                Image("ddg-map-logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 70)
-                    .shadow(radius: 10)
-                Spacer()
+                .ignoresSafeArea(SafeAreaRegions.all, edges: .top)
+            ZStack {
+                VStack {
+                    Color(.black)
+                        .ignoresSafeArea(SafeAreaRegions.all, edges: .top)
+                        .opacity(0.6)
+                    .frame(height: 75)
+                    Spacer()
+                }
+
+                VStack {
+                    Image("ddg-map-logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 60)
+                        .shadow(radius: 10)
+                    Spacer()
+                }
             }
         }
     }
