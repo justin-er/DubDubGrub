@@ -17,17 +17,11 @@ struct LocationDetailView: View {
     
     var body: some View {
             VStack(spacing: 16) {
-//                Image("default-banner-asset")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(height: 120)
-                
                 ZStack {
                     VStack {
                         Color(.black)
                             .opacity(0.6)
                         .frame(height: 75)
-//                        Spacer()
                     }
 
                     VStack {
@@ -36,10 +30,8 @@ struct LocationDetailView: View {
                             .scaledToFit()
                             .frame(height: 60)
                             .shadow(radius: 10)
-//                        Spacer()
                     }
                 }
-
 
                 HStack {
                     Label("123 Main street", systemImage: "mappin.and.ellipse")
