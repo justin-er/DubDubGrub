@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D5758DE5292A97460054A015 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5758DE4292A97460054A015 /* LocationDetailView.swift */; };
 		D57A7519293D0CBF002662B0 /* FirstNameAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57A7518293D0CBF002662B0 /* FirstNameAvatarView.swift */; };
+		D5A9128129ABE20E00BA2497 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9128029ABE20E00BA2497 /* ProfileView.swift */; };
+		D5A9128329ABED0200BA2497 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9128229ABED0200BA2497 /* ProfileHeaderView.swift */; };
 		E151E2BA28FC4AB200497572 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */; };
 		E151E2BE28FC4AB300497572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E151E2BD28FC4AB300497572 /* Assets.xcassets */; };
 		E151E2C128FC4AB300497572 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E151E2C028FC4AB300497572 /* Preview Assets.xcassets */; };
@@ -16,7 +18,6 @@
 		E151E2CB28FC663100497572 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2CA28FC663100497572 /* AppTabView.swift */; };
 		E151E2CD28FC6A7600497572 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2CC28FC6A7600497572 /* LocationMapView.swift */; };
 		E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2CE28FC6B3C00497572 /* LocationListView.swift */; };
-		E151E2D128FC6B6400497572 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2D028FC6B6400497572 /* ProfileView.swift */; };
 		E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2ED28FC915D00497572 /* LocationCell.swift */; };
 		E15586932918444A00C28C7E /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15586922918444A00C28C7E /* AvatarView.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* Begin PBXFileReference section */
 		D5758DE4292A97460054A015 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		D57A7518293D0CBF002662B0 /* FirstNameAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNameAvatarView.swift; sourceTree = "<group>"; };
+		D5A9128029ABE20E00BA2497 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = Justin/ProfileView.swift; sourceTree = "<group>"; };
+		D5A9128229ABED0200BA2497 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		E151E2B628FC4AB200497572 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		E151E2BD28FC4AB300497572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,7 +35,6 @@
 		E151E2CA28FC663100497572 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		E151E2CC28FC6A7600497572 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		E151E2CE28FC6B3C00497572 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
-		E151E2D028FC6B6400497572 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E151E2ED28FC915D00497572 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		E15586922918444A00C28C7E /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +95,8 @@
 		E13C9A39298FD0E5006F8EE8 /* ProfileView */ = {
 			isa = PBXGroup;
 			children = (
-				E151E2D028FC6B6400497572 /* ProfileView.swift */,
+				D5A9128029ABE20E00BA2497 /* ProfileView.swift */,
+				D5A9128229ABED0200BA2497 /* ProfileHeaderView.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -232,8 +235,9 @@
 				E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */,
 				E151E2CB28FC663100497572 /* AppTabView.swift in Sources */,
 				E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */,
+				D5A9128329ABED0200BA2497 /* ProfileHeaderView.swift in Sources */,
+				D5A9128129ABE20E00BA2497 /* ProfileView.swift in Sources */,
 				E15586932918444A00C28C7E /* AvatarView.swift in Sources */,
-				E151E2D128FC6B6400497572 /* ProfileView.swift in Sources */,
 				E151E2C928FC4F5900497572 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
