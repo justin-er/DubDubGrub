@@ -20,6 +20,9 @@
 		E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2CE28FC6B3C00497572 /* LocationListView.swift */; };
 		E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2ED28FC915D00497572 /* LocationCell.swift */; };
 		E15586932918444A00C28C7E /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15586922918444A00C28C7E /* AvatarView.swift */; };
+		E1A280782AACC2BD0036CE33 /* DDGUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A280772AACC2BD0036CE33 /* DDGUserProfile.swift */; };
+		E1EB82192AA4E7240017A8BE /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EB82182AA4E7240017A8BE /* DDGLocation.swift */; };
+		E1F5CC4229C780BD00D87FF6 /* ProfileBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5CC4129C780BD00D87FF6 /* ProfileBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		E151E2CE28FC6B3C00497572 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		E151E2ED28FC915D00497572 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		E15586922918444A00C28C7E /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		E169CEDE2A928B3C00F1D45C /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
+		E1A280772AACC2BD0036CE33 /* DDGUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGUserProfile.swift; sourceTree = "<group>"; };
+		E1EB82182AA4E7240017A8BE /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
+		E1F5CC4129C780BD00D87FF6 /* ProfileBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,7 @@
 			children = (
 				D5A9128029ABE20E00BA2497 /* ProfileView.swift */,
 				D5A9128229ABED0200BA2497 /* ProfileHeaderView.swift */,
+				E1F5CC4129C780BD00D87FF6 /* ProfileBody.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -120,7 +128,9 @@
 		E151E2B828FC4AB200497572 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				E169CEDE2A928B3C00F1D45C /* DubDubGrub.entitlements */,
 				E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */,
+				E1EB82172AA4E7110017A8BE /* Models */,
 				E13C9A38298FD0CA006F8EE8 /* AppTabView */,
 				E13C9A37298FD0B8006F8EE8 /* LocationMapView */,
 				E13C9A36298FD054006F8EE8 /* LocationListView */,
@@ -158,6 +168,15 @@
 			path = LocationCell;
 			sourceTree = "<group>";
 		};
+		E1EB82172AA4E7110017A8BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1EB82182AA4E7240017A8BE /* DDGLocation.swift */,
+				E1A280772AACC2BD0036CE33 /* DDGUserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,7 +205,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					E151E2B528FC4AB200497572 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -233,8 +252,11 @@
 				D57A7519293D0CBF002662B0 /* FirstNameAvatarView.swift in Sources */,
 				E151E2CD28FC6A7600497572 /* LocationMapView.swift in Sources */,
 				E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */,
+				E1EB82192AA4E7240017A8BE /* DDGLocation.swift in Sources */,
+				E1A280782AACC2BD0036CE33 /* DDGUserProfile.swift in Sources */,
 				E151E2CB28FC663100497572 /* AppTabView.swift in Sources */,
 				E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */,
+				E1F5CC4229C780BD00D87FF6 /* ProfileBody.swift in Sources */,
 				D5A9128329ABED0200BA2497 /* ProfileHeaderView.swift in Sources */,
 				D5A9128129ABE20E00BA2497 /* ProfileView.swift in Sources */,
 				E15586932918444A00C28C7E /* AvatarView.swift in Sources */,
@@ -281,6 +303,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -341,6 +364,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -364,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
@@ -375,6 +400,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
@@ -404,6 +431,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
