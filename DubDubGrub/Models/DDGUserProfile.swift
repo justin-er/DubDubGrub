@@ -54,6 +54,4 @@ struct DDGUserProfile {
         self.companyName = companyName
         self.isCheckedIn = isCheckedIn
     }
-
-
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LocationDetailView: View {
+    let location: DDGLocation
     
     let columns = [
         GridItem(.flexible()),
@@ -34,7 +35,7 @@ struct LocationDetailView: View {
                 }
 
                 HStack {
-                    Label("123 Main street", systemImage: "mappin.and.ellipse")
+                    Label(location.address, systemImage: "mappin.and.ellipse")
                         .font(.caption)
                         .foregroundColor(.secondary)
 
@@ -42,7 +43,7 @@ struct LocationDetailView: View {
                 }
                 .padding([.horizontal])
 
-                Text("This is a test description. This is a test description. This is a test description. This is a test description. This is a test description.")
+                Text(location.description)
                     .lineLimit(3)
                     .minimumScaleFactor(0.9)
                     .padding(.horizontal)
@@ -89,7 +90,7 @@ struct LocationDetailView: View {
                     }
                 }
             }
-            .navigationTitle("Location Name")
+            .navigationTitle(location.name)
             .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -97,7 +98,7 @@ struct LocationDetailView: View {
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack() {
-            LocationDetailView()
+            LocationDetailView(location: DDGLocation.TestData.default)
         }
     }
 }

@@ -9,6 +9,7 @@ import CloudKit
 
 struct DDGLocation {
     enum Constants {
+        static let recordType   = "DDGLocation"
         static let recordID     = "ckRecordID"
         static let name         = "name"
         static let description  = "description"
@@ -23,8 +24,8 @@ struct DDGLocation {
     let recordID: CKRecord.ID
     let name: String
     let description: String
-    let squareAsset: CKAsset
-    let bannerAsset: CKAsset
+    let squareAsset: CKAsset?
+    let bannerAsset: CKAsset?
     let address: String
     let location: CLLocation
     let website: String
@@ -34,8 +35,8 @@ struct DDGLocation {
         recordID    = record.recordID
         name        = record[Constants.name] as! String
         description = record[Constants.description] as! String
-        squareAsset = record[Constants.squareAsset] as! CKAsset
-        bannerAsset = record[Constants.bannerAsset] as! CKAsset
+        squareAsset = record[Constants.squareAsset] as? CKAsset
+        bannerAsset = record[Constants.bannerAsset] as? CKAsset
         address     = record[Constants.address] as! String
         location    = record[Constants.location] as! CLLocation
         website     = record[Constants.website] as! String

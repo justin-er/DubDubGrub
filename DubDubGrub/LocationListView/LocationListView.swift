@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct LocationListView: View {
+    @State private var locations: [DDGLocation] = [DDGLocation.TestData.default]
+    
     var body: some View {
         NavigationStack {
-            List(0..<10) { item in
-                NavigationLink(value: item) {
-                    LocationCell()
-                        .alignmentGuide(.listRowSeparatorLeading) { dimentions in
-                            dimentions[.leading]
-                        }
+            List {
+                ForEach(locations, id: \.recordID) { location in
+                    NavigationLink {
+                        LocationDetailView(location: location)
+                    } label: {
+                        LocationCell(location: location)
+                    }
                 }
             }
             .listStyle(.plain)
-            .navigationDestination(for: Int.self, destination: { int in
-                LocationDetailView()
-            })
             .navigationTitle("Grub Spots")
         }
     }

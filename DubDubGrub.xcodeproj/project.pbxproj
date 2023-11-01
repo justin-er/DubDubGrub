@@ -20,7 +20,9 @@
 		E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2CE28FC6B3C00497572 /* LocationListView.swift */; };
 		E151E2EE28FC915D00497572 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2ED28FC915D00497572 /* LocationCell.swift */; };
 		E15586932918444A00C28C7E /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15586922918444A00C28C7E /* AvatarView.swift */; };
+		E1817BEF2AEEDA5C0084B822 /* CKRecord+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1817BEE2AEEDA5C0084B822 /* CKRecord+TestData.swift */; };
 		E1A280782AACC2BD0036CE33 /* DDGUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A280772AACC2BD0036CE33 /* DDGUserProfile.swift */; };
+		E1A2807B2AACD19C0036CE33 /* DDGLocation+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2807A2AACD19C0036CE33 /* DDGLocation+TestData.swift */; };
 		E1EB82192AA4E7240017A8BE /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EB82182AA4E7240017A8BE /* DDGLocation.swift */; };
 		E1F5CC4229C780BD00D87FF6 /* ProfileBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5CC4129C780BD00D87FF6 /* ProfileBody.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +43,9 @@
 		E151E2ED28FC915D00497572 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		E15586922918444A00C28C7E /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		E169CEDE2A928B3C00F1D45C /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
+		E1817BEE2AEEDA5C0084B822 /* CKRecord+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+TestData.swift"; sourceTree = "<group>"; };
 		E1A280772AACC2BD0036CE33 /* DDGUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGUserProfile.swift; sourceTree = "<group>"; };
+		E1A2807A2AACD19C0036CE33 /* DDGLocation+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DDGLocation+TestData.swift"; sourceTree = "<group>"; };
 		E1EB82182AA4E7240017A8BE /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		E1F5CC4129C780BD00D87FF6 /* ProfileBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +132,7 @@
 		E151E2B828FC4AB200497572 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				E151E2BD28FC4AB300497572 /* Assets.xcassets */,
 				E169CEDE2A928B3C00F1D45C /* DubDubGrub.entitlements */,
 				E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */,
 				E1EB82172AA4E7110017A8BE /* Models */,
@@ -137,7 +142,7 @@
 				D5CEEB712921788200D00F8B /* LocationDetailView */,
 				E13C9A39298FD0E5006F8EE8 /* ProfileView */,
 				D57A7517293D0C9F002662B0 /* ReusableViews */,
-				E151E2BD28FC4AB300497572 /* Assets.xcassets */,
+				E1A280792AACD12E0036CE33 /* Mocks */,
 				E151E2C728FC4F4400497572 /* Extensions */,
 				E151E2BF28FC4AB300497572 /* Preview Content */,
 			);
@@ -166,6 +171,15 @@
 				E151E2ED28FC915D00497572 /* LocationCell.swift */,
 			);
 			path = LocationCell;
+			sourceTree = "<group>";
+		};
+		E1A280792AACD12E0036CE33 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A2807A2AACD19C0036CE33 /* DDGLocation+TestData.swift */,
+				E1817BEE2AEEDA5C0084B822 /* CKRecord+TestData.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		E1EB82172AA4E7110017A8BE /* Models */ = {
@@ -251,7 +265,9 @@
 				D5758DE5292A97460054A015 /* LocationDetailView.swift in Sources */,
 				D57A7519293D0CBF002662B0 /* FirstNameAvatarView.swift in Sources */,
 				E151E2CD28FC6A7600497572 /* LocationMapView.swift in Sources */,
+				E1817BEF2AEEDA5C0084B822 /* CKRecord+TestData.swift in Sources */,
 				E151E2CF28FC6B3C00497572 /* LocationListView.swift in Sources */,
+				E1A2807B2AACD19C0036CE33 /* DDGLocation+TestData.swift in Sources */,
 				E1EB82192AA4E7240017A8BE /* DDGLocation.swift in Sources */,
 				E1A280782AACC2BD0036CE33 /* DDGUserProfile.swift in Sources */,
 				E151E2CB28FC663100497572 /* AppTabView.swift in Sources */,

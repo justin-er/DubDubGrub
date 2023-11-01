@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LocationCell: View {
+    let location: DDGLocation
+    
     var body: some View {
         HStack(spacing: 8) {
             Image("default-square-asset")
@@ -17,7 +19,7 @@ struct LocationCell: View {
                 .clipShape(Circle())
             
             VStack(alignment: .leading) {
-                Text("AC Kitchen and Lounge")
+                Text(location.name)
                     .font(.title2)
                     .fontWeight(.semibold)
                     .lineLimit(1)
@@ -39,7 +41,7 @@ struct LocationCell: View {
 
 struct LocationCell_Previews: PreviewProvider {
     static var previews: some View {
-        LocationCell()
+        LocationCell(location: DDGLocation.TestData.default)
             .previewLayout(.fixed(width: 450, height: 220))
     }
 }
