@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct AppTabView: View {
-    var body: some View {
+public struct AppTabView: View {
+    public var body: some View {
         TabView {
             LocationMapView()
                 .tabItem {
@@ -26,6 +26,10 @@ struct AppTabView: View {
                 }
         }
         .accentColor(.brandPrimary)
+    }
+    
+    public init() {
+        
     }
 }
 

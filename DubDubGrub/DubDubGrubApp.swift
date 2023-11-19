@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DDGView
 
 @main
 struct DubDubGrubApp: App {
