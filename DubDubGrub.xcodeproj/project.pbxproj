@@ -3,24 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E107B5AA2B0A995300B137F8 /* DDGApp in Resources */ = {isa = PBXBuildFile; fileRef = E107B5A92B0A995300B137F8 /* DDGApp */; };
 		E151E2BA28FC4AB200497572 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */; };
 		E1726C7E2B0A964D00AA4C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1726C7D2B0A964D00AA4C30 /* Assets.xcassets */; };
 		E1726C812B0A969600AA4C30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1726C802B0A969600AA4C30 /* Preview Assets.xcassets */; };
-		E1726C842B0A981700AA4C30 /* DDGView in Frameworks */ = {isa = PBXBuildFile; productRef = E1726C832B0A981700AA4C30 /* DDGView */; };
-		E1817BF52AF8A0F00084B822 /* DDGCloudKitService in Frameworks */ = {isa = PBXBuildFile; productRef = E1817BF42AF8A0F00084B822 /* DDGCloudKitService */; };
+		E1F5CEC52B0AA7F4007CBCDE /* DDGBusiness in Frameworks */ = {isa = PBXBuildFile; productRef = E1F5CEC42B0AA7F4007CBCDE /* DDGBusiness */; };
+		E1F5CEC72B0AA7F4007CBCDE /* DDGView in Frameworks */ = {isa = PBXBuildFile; productRef = E1F5CEC62B0AA7F4007CBCDE /* DDGView */; };
+		E1F5CEC92B0AAF5F007CBCDE /* DDGCKService in Frameworks */ = {isa = PBXBuildFile; productRef = E1F5CEC82B0AAF5F007CBCDE /* DDGCKService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E114345A2AF8AC730075DE2F /* DDGCloudKitService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DDGCloudKitService; sourceTree = "<group>"; };
+		E107B5A92B0A995300B137F8 /* DDGApp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DDGApp; sourceTree = "<group>"; };
 		E151E2B628FC4AB200497572 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E151E2B928FC4AB200497572 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		E169CEDE2A928B3C00F1D45C /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
-		E1726C612B0A91F000AA4C30 /* DDGView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DDGView; sourceTree = "<group>"; };
-		E1726C7C2B0A941600AA4C30 /* DDGBusiness */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DDGBusiness; sourceTree = "<group>"; };
 		E1726C7D2B0A964D00AA4C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1726C802B0A969600AA4C30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,8 +30,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1817BF52AF8A0F00084B822 /* DDGCloudKitService in Frameworks */,
-				E1726C842B0A981700AA4C30 /* DDGView in Frameworks */,
+				E1F5CEC52B0AA7F4007CBCDE /* DDGBusiness in Frameworks */,
+				E1F5CEC92B0AAF5F007CBCDE /* DDGCKService in Frameworks */,
+				E1F5CEC72B0AA7F4007CBCDE /* DDGView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,10 +42,8 @@
 		E151E2AD28FC4AB200497572 = {
 			isa = PBXGroup;
 			children = (
+				E107B5A92B0A995300B137F8 /* DDGApp */,
 				E151E2B828FC4AB200497572 /* DubDubGrub */,
-				E1726C7C2B0A941600AA4C30 /* DDGBusiness */,
-				E1726C612B0A91F000AA4C30 /* DDGView */,
-				E114345A2AF8AC730075DE2F /* DDGCloudKitService */,
 				E151E2B728FC4AB200497572 /* Products */,
 				E1726C822B0A981700AA4C30 /* Frameworks */,
 			);
@@ -102,8 +101,9 @@
 			);
 			name = DubDubGrub;
 			packageProductDependencies = (
-				E1817BF42AF8A0F00084B822 /* DDGCloudKitService */,
-				E1726C832B0A981700AA4C30 /* DDGView */,
+				E1F5CEC42B0AA7F4007CBCDE /* DDGBusiness */,
+				E1F5CEC62B0AA7F4007CBCDE /* DDGView */,
+				E1F5CEC82B0AAF5F007CBCDE /* DDGCKService */,
 			);
 			productName = DubDubGrub;
 			productReference = E151E2B628FC4AB200497572 /* DubDubGrub.app */;
@@ -134,7 +134,6 @@
 			);
 			mainGroup = E151E2AD28FC4AB200497572;
 			packageReferences = (
-				E1817BF32AF8A0F00084B822 /* XCLocalSwiftPackageReference "DDGCloudKitService" */,
 			);
 			productRefGroup = E151E2B728FC4AB200497572 /* Products */;
 			projectDirPath = "";
@@ -150,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E107B5AA2B0A995300B137F8 /* DDGApp in Resources */,
 				E1726C812B0A969600AA4C30 /* Preview Assets.xcassets in Resources */,
 				E1726C7E2B0A964D00AA4C30 /* Assets.xcassets in Resources */,
 			);
@@ -370,21 +370,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		E1817BF32AF8A0F00084B822 /* XCLocalSwiftPackageReference "DDGCloudKitService" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = DDGCloudKitService;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		E1726C832B0A981700AA4C30 /* DDGView */ = {
+		E1F5CEC42B0AA7F4007CBCDE /* DDGBusiness */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DDGBusiness;
+		};
+		E1F5CEC62B0AA7F4007CBCDE /* DDGView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DDGView;
 		};
-		E1817BF42AF8A0F00084B822 /* DDGCloudKitService */ = {
+		E1F5CEC82B0AAF5F007CBCDE /* DDGCKService */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DDGCloudKitService;
+			productName = DDGCKService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
