@@ -2,7 +2,7 @@
 //  AppTabView.swift
 //  DubDubGrub
 //
-//  Created by Amirreza Eghtedari on 21.11.21.
+//  Created by Sean Allen on 5/19/21.
 //
 
 import SwiftUI
@@ -14,21 +14,18 @@ struct AppTabView: View {
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }
-
+            
             LocationListView()
                 .tabItem {
                     Label("Locations", systemImage: "building")
-                        .environment(\.symbolVariants, .none)
                 }
-
-            ProfileView()
-                .tabItem {
-                    Label("Profile", systemImage: "person")
-                }
-            Text("Salam")
-                .tabItem {
-                    Label("Salam", systemImage: "map")
-                }
+            
+            NavigationView {
+                ProfileView()
+            }
+            .tabItem {
+                Label("Profile", systemImage: "person")
+            }
         }
         .accentColor(.brandPrimary)
     }

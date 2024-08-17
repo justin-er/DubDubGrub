@@ -8,11 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D519841027F62DC30087870A /* SampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D519840627F62DC30087870A /* SampleFramework.framework */; };
-		E100AA44274AC3F900D0A1D5 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100AA43274AC3F900D0A1D5 /* AppTabView.swift */; };
-		E1274781274AC4E400DC5DA3 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1274780274AC4E400DC5DA3 /* LocationMapView.swift */; };
-		E1274783274AC53C00DC5DA3 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1274782274AC53C00DC5DA3 /* LocationListView.swift */; };
-		E1274785274AC54F00DC5DA3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1274784274AC54F00DC5DA3 /* ProfileView.swift */; };
 		E1274787274ACF0000DC5DA3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1274786274ACF0000DC5DA3 /* TestView.swift */; };
+		E14044C22C70663300535453 /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044C12C70663300535453 /* DDGLocation.swift */; };
+		E14044C52C706D7100535453 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044C32C706D7100535453 /* MockData.swift */; };
+		E14044C62C706D7100535453 /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044C42C706D7100535453 /* DDGProfile.swift */; };
+		E14044D42C70718900535453 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044C72C70718900535453 /* LocationCell.swift */; };
+		E14044D52C70718900535453 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044C92C70718900535453 /* AvatarView.swift */; };
+		E14044D62C70718900535453 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CA2C70718900535453 /* DDGButton.swift */; };
+		E14044D72C70718900535453 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CC2C70718900535453 /* AppTabView.swift */; };
+		E14044D82C70718900535453 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CD2C70718900535453 /* LocationDetailView.swift */; };
+		E14044D92C70718900535453 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CE2C70718900535453 /* LocationListView.swift */; };
+		E14044DA2C70718900535453 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CF2C70718900535453 /* LocationMapView.swift */; };
+		E14044DB2C70718900535453 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044D02C70718900535453 /* ProfileView.swift */; };
+		E14044DC2C70718900535453 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044D22C70718900535453 /* CustomModifiers.swift */; };
+		E14044EA2C70873500535453 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E32C70873500535453 /* CKRecord+Ext.swift */; };
+		E14044EB2C70873500535453 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E42C70873500535453 /* Color+Ext.swift */; };
+		E14044EC2C70873500535453 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E52C70873500535453 /* View+Ext.swift */; };
+		E14044ED2C70873500535453 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E72C70873500535453 /* CloudKitManager.swift */; };
+		E14044EE2C70873500535453 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E82C70873500535453 /* Constants.swift */; };
+		E14044F02C70FBD400535453 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044EF2C70FBD400535453 /* AlertItem.swift */; };
 		E1B887992749784D00998DFC /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B887982749784D00998DFC /* DubDubGrubApp.swift */; };
 		E1B8879B2749784D00998DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8879A2749784D00998DFC /* ContentView.swift */; };
 		E1B8879D2749784F00998DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B8879C2749784F00998DFC /* Assets.xcassets */; };
@@ -56,11 +70,26 @@
 /* Begin PBXFileReference section */
 		D519840627F62DC30087870A /* SampleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D519840F27F62DC30087870A /* SampleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E100AA43274AC3F900D0A1D5 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
-		E1274780274AC4E400DC5DA3 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
-		E1274782274AC53C00DC5DA3 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
-		E1274784274AC54F00DC5DA3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E1274786274ACF0000DC5DA3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		E14044C12C70663300535453 /* DDGLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
+		E14044C32C706D7100535453 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		E14044C42C706D7100535453 /* DDGProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
+		E14044C72C70718900535453 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		E14044C92C70718900535453 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		E14044CA2C70718900535453 /* DDGButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
+		E14044CC2C70718900535453 /* AppTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		E14044CD2C70718900535453 /* LocationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		E14044CE2C70718900535453 /* LocationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		E14044CF2C70718900535453 /* LocationMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		E14044D02C70718900535453 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E14044D22C70718900535453 /* CustomModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		E14044E32C70873500535453 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
+		E14044E42C70873500535453 /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		E14044E52C70873500535453 /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		E14044E72C70873500535453 /* CloudKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		E14044E82C70873500535453 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E14044EF2C70FBD400535453 /* AlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		E14044F12C71014200535453 /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
 		E1B887952749784D00998DFC /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B887982749784D00998DFC /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		E1B8879A2749784D00998DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +142,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E14044C02C70661A00535453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E14044C12C70663300535453 /* DDGLocation.swift */,
+				E14044C42C706D7100535453 /* DDGProfile.swift */,
+				E14044C32C706D7100535453 /* MockData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E14044C82C70718900535453 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E14044C72C70718900535453 /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E14044CB2C70718900535453 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E14044C92C70718900535453 /* AvatarView.swift */,
+				E14044CA2C70718900535453 /* DDGButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E14044D12C70718900535453 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E14044CC2C70718900535453 /* AppTabView.swift */,
+				E14044CD2C70718900535453 /* LocationDetailView.swift */,
+				E14044CE2C70718900535453 /* LocationListView.swift */,
+				E14044CF2C70718900535453 /* LocationMapView.swift */,
+				E14044D02C70718900535453 /* ProfileView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E14044D32C70718900535453 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E14044C82C70718900535453 /* Cells */,
+				E14044CB2C70718900535453 /* CustomViews */,
+				E14044D12C70718900535453 /* Screens */,
+				E14044D22C70718900535453 /* CustomModifiers.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E14044E22C7072EA00535453 /* Experiment */ = {
+			isa = PBXGroup;
+			children = (
+				E1274786274ACF0000DC5DA3 /* TestView.swift */,
+			);
+			path = Experiment;
+			sourceTree = "<group>";
+		};
+		E14044E62C70873500535453 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E14044E32C70873500535453 /* CKRecord+Ext.swift */,
+				E14044E42C70873500535453 /* Color+Ext.swift */,
+				E14044E52C70873500535453 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E14044E92C70873500535453 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				E14044EF2C70FBD400535453 /* AlertItem.swift */,
+				E14044E62C70873500535453 /* Extensions */,
+				E14044E72C70873500535453 /* CloudKitManager.swift */,
+				E14044E82C70873500535453 /* Constants.swift */,
+			);
+			path = Utilties;
+			sourceTree = "<group>";
+		};
 		E1B8878C2749784D00998DFC = {
 			isa = PBXGroup;
 			children = (
@@ -138,15 +246,15 @@
 		E1B887972749784D00998DFC /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				E14044F12C71014200535453 /* DubDubGrub.entitlements */,
 				E1B887982749784D00998DFC /* DubDubGrubApp.swift */,
 				E1B8879A2749784D00998DFC /* ContentView.swift */,
 				E1B8879C2749784F00998DFC /* Assets.xcassets */,
+				E14044D32C70718900535453 /* Views */,
+				E14044C02C70661A00535453 /* Model */,
+				E14044E92C70873500535453 /* Utilties */,
 				E1B8879E2749784F00998DFC /* Preview Content */,
-				E100AA43274AC3F900D0A1D5 /* AppTabView.swift */,
-				E1274780274AC4E400DC5DA3 /* LocationMapView.swift */,
-				E1274782274AC53C00DC5DA3 /* LocationListView.swift */,
-				E1274784274AC54F00DC5DA3 /* ProfileView.swift */,
-				E1274786274ACF0000DC5DA3 /* TestView.swift */,
+				E14044E22C7072EA00535453 /* Experiment */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -390,13 +498,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14044EE2C70873500535453 /* Constants.swift in Sources */,
 				E1B8879B2749784D00998DFC /* ContentView.swift in Sources */,
+				E14044D92C70718900535453 /* LocationListView.swift in Sources */,
+				E14044DA2C70718900535453 /* LocationMapView.swift in Sources */,
+				E14044D52C70718900535453 /* AvatarView.swift in Sources */,
 				E1B887992749784D00998DFC /* DubDubGrubApp.swift in Sources */,
-				E1274781274AC4E400DC5DA3 /* LocationMapView.swift in Sources */,
-				E1274783274AC53C00DC5DA3 /* LocationListView.swift in Sources */,
+				E14044D72C70718900535453 /* AppTabView.swift in Sources */,
+				E14044F02C70FBD400535453 /* AlertItem.swift in Sources */,
+				E14044D62C70718900535453 /* DDGButton.swift in Sources */,
+				E14044C62C706D7100535453 /* DDGProfile.swift in Sources */,
+				E14044DB2C70718900535453 /* ProfileView.swift in Sources */,
+				E14044ED2C70873500535453 /* CloudKitManager.swift in Sources */,
+				E14044D82C70718900535453 /* LocationDetailView.swift in Sources */,
+				E14044EC2C70873500535453 /* View+Ext.swift in Sources */,
+				E14044DC2C70718900535453 /* CustomModifiers.swift in Sources */,
+				E14044C52C706D7100535453 /* MockData.swift in Sources */,
+				E14044EA2C70873500535453 /* CKRecord+Ext.swift in Sources */,
+				E14044D42C70718900535453 /* LocationCell.swift in Sources */,
+				E14044C22C70663300535453 /* DDGLocation.swift in Sources */,
+				E14044EB2C70873500535453 /* Color+Ext.swift in Sources */,
 				E1274787274ACF0000DC5DA3 /* TestView.swift in Sources */,
-				E100AA44274AC3F900D0A1D5 /* AppTabView.swift in Sources */,
-				E1274785274AC54F00DC5DA3 /* ProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +792,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
@@ -687,8 +811,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codedstuff.dubDubGrub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codedstuff.DubDubGrub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -700,6 +825,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DubDubGrub/DubDubGrub.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DubDubGrub/Preview Content\"";
@@ -717,8 +844,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codedstuff.dubDubGrub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codedstuff.DubDubGrub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
