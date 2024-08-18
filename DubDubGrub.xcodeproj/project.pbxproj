@@ -213,8 +213,8 @@
 		E14044E92C70873500535453 /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
-				E14044EF2C70FBD400535453 /* AlertItem.swift */,
 				E14044E62C70873500535453 /* Extensions */,
+				E14044EF2C70FBD400535453 /* AlertItem.swift */,
 				E14044E72C70873500535453 /* CloudKitManager.swift */,
 				E14044E82C70873500535453 /* Constants.swift */,
 			);

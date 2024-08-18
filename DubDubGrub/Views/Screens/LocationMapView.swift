@@ -27,16 +27,20 @@ struct LocationMapView: View {
                 Spacer()
             }
         }
-        .alert(item: $alertItem, content: { alertItem in
-            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
-        })
+        .alert(item: $alertItem) { alertItem in
+            Alert(
+                title: alertItem.title,
+                message: alertItem.message,
+                dismissButton: alertItem.dismissButton
+            )
+        }
         .onAppear {
             CloudKitManager.getLocations { [self] result in
                 switch result {
-                    case .success(let locations):
-                        print("???", locations)
-                    case .failure(_):
-                        alertItem = AlertContext.unableToGetLocations
+                case .success(let locations):
+                    print("???", locations)
+                case .failure(_):
+                    alertItem = AlertContext.unableToGetLocations
                 }
             }
         }

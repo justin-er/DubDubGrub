@@ -29,6 +29,6 @@ struct CloudKitManager {
             case let .failure(error):
                 completed(.failure(error))
             }
-        }        
+        }
     }
 }
