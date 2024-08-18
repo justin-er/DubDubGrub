@@ -16,12 +16,12 @@ struct CloudKitManager {
         
         CKContainer.default().publicCloudDatabase.fetch(withQuery: query) { result in
             switch result {
-            case let .success((matchResults, error)):
+            case let .success((matchResults, _)):
                 let locations = matchResults.compactMap { (_, recordResult) in
                     switch recordResult {
                     case .success(let record):
                         return record.convertToDDGLocation()
-                    case .failure(let error):
+                    case .failure(_):
                         return nil
                     }
                 }

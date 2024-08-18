@@ -18,7 +18,6 @@
 		E14044D72C70718900535453 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CC2C70718900535453 /* AppTabView.swift */; };
 		E14044D82C70718900535453 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CD2C70718900535453 /* LocationDetailView.swift */; };
 		E14044D92C70718900535453 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CE2C70718900535453 /* LocationListView.swift */; };
-		E14044DA2C70718900535453 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044CF2C70718900535453 /* LocationMapView.swift */; };
 		E14044DB2C70718900535453 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044D02C70718900535453 /* ProfileView.swift */; };
 		E14044DC2C70718900535453 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044D22C70718900535453 /* CustomModifiers.swift */; };
 		E14044EA2C70873500535453 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E32C70873500535453 /* CKRecord+Ext.swift */; };
@@ -27,6 +26,8 @@
 		E14044ED2C70873500535453 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E72C70873500535453 /* CloudKitManager.swift */; };
 		E14044EE2C70873500535453 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044E82C70873500535453 /* Constants.swift */; };
 		E14044F02C70FBD400535453 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044EF2C70FBD400535453 /* AlertItem.swift */; };
+		E14044F52C71EF7300535453 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044F22C71EF7300535453 /* LocationMapView.swift */; };
+		E14044F62C71EF7300535453 /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044F32C71EF7300535453 /* LocationMapViewModel.swift */; };
 		E1B887992749784D00998DFC /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B887982749784D00998DFC /* DubDubGrubApp.swift */; };
 		E1B8879B2749784D00998DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8879A2749784D00998DFC /* ContentView.swift */; };
 		E1B8879D2749784F00998DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B8879C2749784F00998DFC /* Assets.xcassets */; };
@@ -80,7 +81,6 @@
 		E14044CC2C70718900535453 /* AppTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		E14044CD2C70718900535453 /* LocationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		E14044CE2C70718900535453 /* LocationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
-		E14044CF2C70718900535453 /* LocationMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		E14044D02C70718900535453 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E14044D22C70718900535453 /* CustomModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		E14044E32C70873500535453 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
@@ -90,6 +90,8 @@
 		E14044E82C70873500535453 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E14044EF2C70FBD400535453 /* AlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		E14044F12C71014200535453 /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
+		E14044F22C71EF7300535453 /* LocationMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		E14044F32C71EF7300535453 /* LocationMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
 		E1B887952749784D00998DFC /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B887982749784D00998DFC /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		E1B8879A2749784D00998DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -172,10 +174,10 @@
 		E14044D12C70718900535453 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E14044F42C71EF7300535453 /* LocationMapView */,
 				E14044CC2C70718900535453 /* AppTabView.swift */,
 				E14044CD2C70718900535453 /* LocationDetailView.swift */,
 				E14044CE2C70718900535453 /* LocationListView.swift */,
-				E14044CF2C70718900535453 /* LocationMapView.swift */,
 				E14044D02C70718900535453 /* ProfileView.swift */,
 			);
 			path = Screens;
@@ -219,6 +221,15 @@
 				E14044E82C70873500535453 /* Constants.swift */,
 			);
 			path = Utilties;
+			sourceTree = "<group>";
+		};
+		E14044F42C71EF7300535453 /* LocationMapView */ = {
+			isa = PBXGroup;
+			children = (
+				E14044F22C71EF7300535453 /* LocationMapView.swift */,
+				E14044F32C71EF7300535453 /* LocationMapViewModel.swift */,
+			);
+			path = LocationMapView;
 			sourceTree = "<group>";
 		};
 		E1B8878C2749784D00998DFC = {
@@ -501,8 +512,8 @@
 				E14044EE2C70873500535453 /* Constants.swift in Sources */,
 				E1B8879B2749784D00998DFC /* ContentView.swift in Sources */,
 				E14044D92C70718900535453 /* LocationListView.swift in Sources */,
-				E14044DA2C70718900535453 /* LocationMapView.swift in Sources */,
 				E14044D52C70718900535453 /* AvatarView.swift in Sources */,
+				E14044F62C71EF7300535453 /* LocationMapViewModel.swift in Sources */,
 				E1B887992749784D00998DFC /* DubDubGrubApp.swift in Sources */,
 				E14044D72C70718900535453 /* AppTabView.swift in Sources */,
 				E14044F02C70FBD400535453 /* AlertItem.swift in Sources */,
@@ -512,6 +523,7 @@
 				E14044ED2C70873500535453 /* CloudKitManager.swift in Sources */,
 				E14044D82C70718900535453 /* LocationDetailView.swift in Sources */,
 				E14044EC2C70873500535453 /* View+Ext.swift in Sources */,
+				E14044F52C71EF7300535453 /* LocationMapView.swift in Sources */,
 				E14044DC2C70718900535453 /* CustomModifiers.swift in Sources */,
 				E14044C52C706D7100535453 /* MockData.swift in Sources */,
 				E14044EA2C70873500535453 /* CKRecord+Ext.swift in Sources */,
