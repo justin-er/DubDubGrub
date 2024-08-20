@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    let locationManager = LocationManager()
+    
     var body: some View {
         AppTabView()
+            .environmentObject(locationManager)
     }
 }
 
