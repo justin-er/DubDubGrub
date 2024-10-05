@@ -28,7 +28,6 @@
 		E14044F02C70FBD400535453 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044EF2C70FBD400535453 /* AlertItem.swift */; };
 		E14044F52C71EF7300535453 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044F22C71EF7300535453 /* LocationMapView.swift */; };
 		E14044F62C71EF7300535453 /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14044F32C71EF7300535453 /* LocationMapViewModel.swift */; };
-		E18555DD2C7B8A8F00464229 /* SwiftUIStateBindingPractice.swiftpm in Resources */ = {isa = PBXBuildFile; fileRef = E18555DC2C7B8A8F00464229 /* SwiftUIStateBindingPractice.swiftpm */; };
 		E1B887992749784D00998DFC /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B887982749784D00998DFC /* DubDubGrubApp.swift */; };
 		E1B8879B2749784D00998DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8879A2749784D00998DFC /* ContentView.swift */; };
 		E1B8879D2749784F00998DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B8879C2749784F00998DFC /* Assets.xcassets */; };
@@ -72,6 +71,7 @@
 /* Begin PBXFileReference section */
 		D519840627F62DC30087870A /* SampleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D519840F27F62DC30087870A /* SampleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10559BE2CB1A9B90027FA13 /* SwiftUIStateBindingPractice.swiftpm */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SwiftUIStateBindingPractice.swiftpm; sourceTree = "<group>"; };
 		E11B4A4E2C7256DD005B43BF /* CloudKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		E11B4A4F2C7256DD005B43BF /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E14044C12C70663300535453 /* DDGLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
@@ -93,7 +93,6 @@
 		E14044F12C71014200535453 /* DubDubGrub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DubDubGrub.entitlements; sourceTree = "<group>"; };
 		E14044F22C71EF7300535453 /* LocationMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		E14044F32C71EF7300535453 /* LocationMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
-		E18555DC2C7B8A8F00464229 /* SwiftUIStateBindingPractice.swiftpm */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIStateBindingPractice.swiftpm; path = ../SwiftUIStateBindingPractice.swiftpm; sourceTree = "<group>"; };
 		E1B887952749784D00998DFC /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B887982749784D00998DFC /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		E1B8879A2749784D00998DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -238,8 +237,8 @@
 		E1B8878C2749784D00998DFC = {
 			isa = PBXGroup;
 			children = (
+				E10559BE2CB1A9B90027FA13 /* SwiftUIStateBindingPractice.swiftpm */,
 				E1B887972749784D00998DFC /* DubDubGrub */,
-				E18555DC2C7B8A8F00464229 /* SwiftUIStateBindingPractice.swiftpm */,
 				E1B887A82749784F00998DFC /* DubDubGrubTests */,
 				E1B887B22749784F00998DFC /* DubDubGrubUITests */,
 				E1B887962749784D00998DFC /* Products */,
@@ -473,7 +472,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B887A02749784F00998DFC /* Preview Assets.xcassets in Resources */,
-				E18555DD2C7B8A8F00464229 /* SwiftUIStateBindingPractice.swiftpm in Resources */,
 				E1B8879D2749784F00998DFC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
