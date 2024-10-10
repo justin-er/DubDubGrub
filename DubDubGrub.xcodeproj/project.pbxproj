@@ -71,7 +71,6 @@
 /* Begin PBXFileReference section */
 		D519840627F62DC30087870A /* SampleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D519840F27F62DC30087870A /* SampleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10559BE2CB1A9B90027FA13 /* SwiftUIStateBindingPractice.swiftpm */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SwiftUIStateBindingPractice.swiftpm; sourceTree = "<group>"; };
 		E11B4A4E2C7256DD005B43BF /* CloudKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		E11B4A4F2C7256DD005B43BF /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E14044C12C70663300535453 /* DDGLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
@@ -237,7 +236,6 @@
 		E1B8878C2749784D00998DFC = {
 			isa = PBXGroup;
 			children = (
-				E10559BE2CB1A9B90027FA13 /* SwiftUIStateBindingPractice.swiftpm */,
 				E1B887972749784D00998DFC /* DubDubGrub */,
 				E1B887A82749784F00998DFC /* DubDubGrubTests */,
 				E1B887B22749784F00998DFC /* DubDubGrubUITests */,
