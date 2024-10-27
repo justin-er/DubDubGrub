@@ -1,10 +1,3 @@
-//
-//  LocationCell.swift
-//  DubDubGrub
-//
-//  Created by Sean Allen on 5/21/21.
-//
-
 import SwiftUI
 
 struct LocationCell: View {
