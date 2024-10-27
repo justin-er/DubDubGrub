@@ -1,11 +1,6 @@
-//
-//  MockData.swift
-//  DubDubGrub
-//
-//  Created by Sean Allen on 5/25/21.
-//
-
 import CloudKit
+
+// Make a sample mistake in here..
 
 struct MockData {
     
